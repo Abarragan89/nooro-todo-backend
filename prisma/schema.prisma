@@ -18,6 +18,7 @@ model Task {
   title       String
   color       String
   isComplete  Boolean   @default(false)
+  createdAt DateTime @default(now())
 }
 
 
