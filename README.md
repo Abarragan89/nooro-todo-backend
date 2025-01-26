@@ -16,23 +16,17 @@ Follow these instructions to set up and run the application locally.
 1. Clone the repository:
    ```bash
    git clone git@github.com:Abarragan89/nooro-todo-backend.git
-   cd git@github.com:Abarragan89/nooro-todo-backend.git
-
+   cd ./nooro-todo-backend
 2. Install Dependencies:
    ```bash
    npm install
-
-3. Environment Variables:
-   ```bash
-   Create a .env file and add your Database connection string.
-
-   Variable should be named DATABASE_URL
+3. Create a .env file and add your Database connection string. Variable should be named DATABASE_URL
    
 4. Migrate Primsa Models and Primsa Client:
    ```bash
    npm run migrate
-
-
 5. Start the server:
    ```bash
    npm run dev
+6. Start up the frontend. 
+   You can find the repo [here](https://github.com/Abarragan89/nooro-todo-frontend)
