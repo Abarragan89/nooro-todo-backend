@@ -56,6 +56,7 @@ router.post("/", async (req: Request, res: Response) => {
     }
 });
 
+// Update task by ID
 router.put("/:taskId",  async (req: Request, res: Response) => {
     try {
         const {taskTitle, taskColor, isComplete} = req.body;
@@ -83,6 +84,7 @@ router.put("/:taskId",  async (req: Request, res: Response) => {
     }
 })
 
+// Delete Task by Id
 router.delete("/:taskId",  async (req: Request, res: Response) => {
     try {
         const updatedTask = await prisma.task.delete({
