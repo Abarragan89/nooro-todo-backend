@@ -22,15 +22,16 @@ Follow these instructions to set up and run the application locally.
    ```bash
    npm install
 
-3. Migrate Primsa Models and Primsa Client:
-   ```bash
-   npm run prisma
-
-4. Environment Variables:
+3. Environment Variables:
    ```bash
    Create a .env file and add your Database connection string.
 
    Variable should be named DATABASE_URL
+   
+4. Migrate Primsa Models and Primsa Client:
+   ```bash
+   npm run migrate
+
 
 5. Start the server:
    ```bash
